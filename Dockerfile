@@ -8,4 +8,4 @@ EXPOSE 8000
 
 RUN pip install -r requirements.txt
 
-CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+CMD ["uvicorn", "api:app", "--host", "66.42.60.243", "--port", "8000", "--reload", "--reload-dir", "/"]

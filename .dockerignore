@@ -1,0 +1,32 @@
+# System directories
+/proc
+/sys
+/dev
+/tmp
+/var
+/run
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+.venv
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore 
