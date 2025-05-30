@@ -1,6 +1,22 @@
 FROM python:3.10
 
+RUN chown -R 1001:0 /
+
+
+
+# -----------------------------------
+# switch to application directory
 WORKDIR /
+
+# -----------------------------------
+# update image os
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    ffmpeg \
+    libsm6 \
+    libxext6 \
+    libhdf5-dev \
+    && rm -rf /var/lib/apt/lists/*
 
 COPY . .
 
