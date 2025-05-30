@@ -1,7 +1,5 @@
 FROM python:3.10
 
-RUN chown -R 1001:0 /
-
 # -----------------------------------
 # switch to root directory
 WORKDIR /
