@@ -11,6 +11,10 @@ import time
 
 app = FastAPI()
 
+@app.get("/")
+def read_root():
+    return {"message": "OK"}
+
 @app.post("/faces_base64/")
 async def faces_base64(
     image1: str = Form(...),

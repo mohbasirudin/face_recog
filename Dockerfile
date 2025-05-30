@@ -14,4 +14,7 @@ RUN pip install -r requirements.txt
 
 CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "5000", "/"]
 
+# CMD ["gunicorn", "-k", "uvicorn.workers.UvicornWorker", "main:app", "--host", "0.0.0.0", "--port", "5000"]
+
+
 # CMD ["gunicorn", "-k", "uvicorn.workers.UvicornWorker", "api:app", "--host", "0.0.0.0", "--port", "5000"]
